@@ -1,0 +1,68 @@
+{
+  "generate_answer": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "context": "It is not true that there is not a single person walking in the city.",
+        "question": "Can we logically conclude for sure that it is not true that there is not a single celebrity walking in the city?",
+        "rationale": "produce the answer. We know that the statement negates the absence of any person walking in the city, which means there is at least one person walking in the city. However, we do not have information about the status of the person or persons walking in the city. They could be celebrities or they could be non-celebrities. Without specific information about the individuals' celebrity status, we cannot logically conclude that a celebrity is walking in the city.",
+        "answer": "No"
+      },
+      {
+        "augmented": true,
+        "context": "the boy, not girl, will play an trombone, but not for another week",
+        "question": "Can we logically conclude for sure that the boy, not girl, will play an instrument, but not for another week?",
+        "rationale": "produce the answer. We know that the subject is a boy and not a girl. We also know that he will play a trombone, which is a type of instrument. The time frame given is that he will not play for another week. Since a trombone is an instrument, we can conclude that the boy will play an instrument, and the time frame does not change this fact.",
+        "answer": "Yes"
+      },
+      {
+        "augmented": true,
+        "context": "A man is not holding anything in his hands.",
+        "question": "Can we logically conclude for sure that a man is not holding beverages in his hands?",
+        "rationale": "produce the answer. We know that the man is not holding anything in his hands. Beverages are a subset of \"anything.\" Therefore, if he is not holding anything, he is also not holding beverages.",
+        "answer": "Yes"
+      },
+      {
+        "augmented": true,
+        "context": "There is not a boat nearby.",
+        "question": "Can we logically conclude for sure that there is not a speedboat nearby?",
+        "rationale": "produce the answer. We know that there is not a boat nearby. A speedboat is a type of boat. If there is no boat of any kind nearby, then it follows that there cannot be a speedboat nearby either.",
+        "answer": "Yes"
+      },
+      {
+        "augmented": true,
+        "context": "The man is not listening to music.",
+        "question": "Can we logically conclude for sure that the man is not listening to rockabilly?",
+        "rationale": "produce the answer. We know that the man is not listening to music. Rockabilly is a genre of music. If the man is not listening to music at all, then he cannot be listening to rockabilly, which is a specific type of music.",
+        "answer": "Yes"
+      },
+      {
+        "augmented": true,
+        "context": "There is not a single person walking in the city.",
+        "question": "Can we logically conclude for sure that there is not a single mover walking in the city?",
+        "rationale": "produce the answer. We know that there is not a single person walking in the city. A mover is a type of person. If there are no people walking in the city, then there cannot be a mover walking in the city, because a mover is included in the broader category of people.",
+        "answer": "Yes"
+      },
+      {
+        "augmented": true,
+        "context": "a man walks not so confidently, but he does not drop eggplants",
+        "question": "Can we logically conclude for sure that a man walks not so confidently, but he does not drop produce?",
+        "rationale": "produce the answer. We know that the man does not drop eggplants, which are a type of produce. However, the statement does not provide information about other types of produce. Therefore, we cannot conclude that he does not drop any type of produce, only that he does not drop eggplants specifically.",
+        "answer": "No"
+      },
+      {
+        "context": "The girl who is not here is not wearing any jewelry at all.",
+        "question": "Can we logically conclude for sure that the girl who is not here is not wearing any ringlets at all?",
+        "answer": "Yes",
+        "category": "one_scoped_one_not_scoped"
+      }
+    ],
+    "signature_instructions": "You are given some context (a premise) and a question (a hypothesis). You must indicate with Yes\/No answer whether we can logically conclude the hypothesis from the premise.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "You are given some context (a premise) and a question (a hypothesis). You must indicate with Yes\/No answer whether we can logically conclude the hypothesis from the premise.",
+    "extended_signature_prefix": "Answer:"
+  }
+}

@@ -1,0 +1,6 @@
+.env
+ScoNe
+ScoNe/*
+local_cache*
+.ipynb_checkpoints*
+*.log
